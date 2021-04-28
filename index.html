@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Image resize_compresser App</title>
+    <title>Image resize_compression App</title>
 </head>
 <body>
 
     <div class="container">
-        <h1>Image resize_compresser App</h1>
+        <h1>Image resize_compression App</h1>
         <form action="" class="form_container">
             <label for="file">Select image for compression</label>
             <input type="file" id="file" class="file" accept="image/*">
         </form>
     
-        <div class="imgcanvas_container">
+        <div class="imgcanvas_container" id="imgcanvas_container">
             <h3>Compressed image</h3>
-            <canvas id="img_convas" class="img_convas" style="border: 1px solid gray;"> </canvas>
-    
+            <canvas id="img_convas" class="img_convas"> </canvas>
+            <p class="orig_fileSize" id="orig_fileSize"></p>
+            <p class="comp_fileSize" id="comp_fileSize"></p>
+            <!-- <a href="" download="compressed_image" style="color:white">download</a> -->
         </div>
 
 
